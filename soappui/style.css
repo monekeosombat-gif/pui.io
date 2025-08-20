@@ -1,0 +1,221 @@
+.head {
+    font-family: "Noto Sans Lao Looped", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings: "wdth" 80;
+    color: rgb(236, 45, 236);
+}
+
+.head {
+    height: 60px;
+    background-color: azure;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+
+input {
+    width: 300px;
+    padding: 5px;
+    font-size: 20px;
+    border-radius: 5px;
+    margin-left: 600px;
+    border-style: dotted;
+    border-width: 5px;
+    border-radius: 50px;
+    background-color: rgb(243, 247, 247);
+}
+
+nav {
+    background-color: rgb(207, 240, 229);
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+
+    a {
+        color: blue;
+        text-decoration: none;
+        padding: 0 30px;
+        margin-right: 10px;
+    }
+}
+
+.p-head {
+    font-family: "Noto Sans Lao Looped", sans-serif;
+    font-size: 30px;
+    text-align: center;
+
+    p {
+        margin-top: -40px;
+        color: rgb(72, 72, 100);
+        font-size: 25px;
+    }
+}
+
+.img {
+    display: flex;
+    flex-wrap: wrap;
+    /* ให้รูปภาพเรียงหลายบรรทัดได้ */
+    gap: 20px;
+    /* ช่องว่างระหว่างรูป */
+    justify-content: center;
+}
+
+.imgs {
+    width: 180px;
+    /* กำหนดขนาดกล่องภาพ */
+    height: 200px;
+    overflow: hidden;
+    /* ซ่อนส่วนที่เกินเวลาขยาย */
+    border-radius: 10px;
+    /* ขอบโค้ง (เลือกใช้ได้) */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    /* เงาเบาๆ */
+}
+
+.imgs img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* ให้ภาพครอบเต็มโดยไม่บิดเบี้ยว */
+    transition: transform 0.3s ease;
+    /* ทำให้ขยายแบบนุ่มนวล */
+}
+
+.imgs:hover img {
+    transform: scale(1.1);
+    /* ขยายขึ้น 10% เมื่อ hover */
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #d6f3ec;
+    padding: 50px;
+    margin: 50px;
+    height: 180px;
+    font-family: "Noto Sans Lao Looped", sans-serif;
+}
+
+.text-content {
+    max-width: 60%;
+}
+
+.text-content h2 {
+    font-weight: bold;
+}
+
+.text-content p {
+    margin: 10px 0 20px;
+}
+
+.button {
+    background-color: #007d79;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.image-content img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.containers {
+    display: flex;
+    align-items: center;
+    padding: 50px;
+}
+
+.image {
+    margin-right: 30px;
+    /* ระยะห่างระหว่างรูปกับข้อความ */
+    animation: zoomInOut 2s ease-in-out infinite;
+    width: 200px;
+}
+
+.text {
+    max-width: 600px;
+    margin-left: 20px;
+    font-family: "Noto Sans Lao Looped", sans-serif;
+}
+
+@keyframes zoomInOut {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+.box_img,
+.box_img1 {
+    display: flex;
+    text-align: center;
+    gap: 10px;
+    padding: 30px;
+    margin-left: 70px;
+    font-family: "Noto Sans Lao Looped", sans-serif;
+
+    img {
+        width: 180px;
+        height: 200px;
+    }
+
+    a {
+        background-color: rgb(107, 207, 207);
+        color: black;
+        padding: 5px 40px;
+        text-decoration: none;
+        display: inline-block;
+        border-radius: 50px;
+    }
+}
+
+
+footer {
+    width: 900px;
+    height: 300px;
+    background-color: #eaecec;
+    padding: 30px;
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+    margin: 0 160px;
+}
+
+.footer-links {
+    margin-bottom: 15px;
+}
+
+.footer-links a{
+    margin: 0 10px;
+    color: blue;
+    text-decoration: none;
+    font-family: "Noto Sans Lao Looped", sans-serif;
+
+        .lo{
+            width: 20px;
+            height: 30px;
+            color: #007d79;
+        }
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.social-icons img {
+    width: 24px;
+    margin: 0 5px;
+    vertical-align: middle;
+}
